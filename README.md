@@ -1,4 +1,4 @@
-# React Weather App
+# React Dictionary App
 The React Dictionary App is a web application developed using React.js. It allows users to search for word definitions, listen to word pronunciation, and explore examples, synonyms, antonyms, and images related to the searched word. The app provides a user-friendly interface to explore and enhance vocabulary.
 
 # Features
