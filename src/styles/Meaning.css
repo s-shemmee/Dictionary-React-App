@@ -1,0 +1,36 @@
+.Meaning h3 {
+  font-size: 35px;
+  line-height: 1.5;
+  font-weight: 800;
+  margin-bottom: 0;
+  color: #2E8B57;
+}
+
+.Meaning hr {
+  margin: 5px 0 15px 0;
+  width: 100%;
+  border: 1px solid #277047;
+}
+
+.definition {
+  text-align: start;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 25px;
+}
+
+.definition span {
+  display: inline-block;
+  padding-right: 5px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.example {
+  font-size: 16px;
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.8;
+  text-transform: lowercase;
+  margin-top: 5px;
+}

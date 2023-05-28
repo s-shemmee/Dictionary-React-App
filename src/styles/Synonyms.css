@@ -1,0 +1,13 @@
+.synonyms{
+  font-size: 14px;
+  font-weight: 400;
+  text-align: start;
+  margin-top: 15px;
+}
+
+.synonyms span{
+  display: inline-block;
+  padding-right: 5px;
+  line-height: 1;
+  font-weight: 700;
+}

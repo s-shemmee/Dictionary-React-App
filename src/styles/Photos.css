@@ -1,0 +1,7 @@
+.Photos img {
+  border-radius: 5px;
+}
+
+.Photos img:hover {
+  opacity: 0.7;
+}
