@@ -25,7 +25,7 @@ To use this app, you can follow these steps:
 - Run `npm start` to start the development server.
 - Open your browser and navigate to `http://localhost:3000` to use the app.
 
-To use the app, simply type a word in the search bar to retrieve its definitions, synonyms, antonyms, and example sentences..
+To use the app, simply type a word in the search bar to retrieve its definitions, synonyms, antonyms, and example sentences.
 
 # Demo
 A live demo of the React Weather App is available at [LINK TO LIVE DEMO](https://dictionary-react-app-kohl.vercel.app).
