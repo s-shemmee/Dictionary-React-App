@@ -1,10 +1,9 @@
 import React from "react";
 import "../styles/Audio.css";
 
-export default function Audio(props) {
+export default function AudioPlayer(props) {
   function handleClick() {
-    const audioElement = document.createElement('audio');
-    audioElement.src = props.audioUrl;
+    const audioElement = new window.Audio(props.audioUrl);
     audioElement.play();
   }
 

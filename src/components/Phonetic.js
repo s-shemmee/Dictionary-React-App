@@ -1,5 +1,5 @@
 import React from "react";
-import Audio from "./Audio";
+import AudioPlayer from "./AudioPlayer";
 import "../styles/Phonetic.css";
 
 export default function Phonetic(props) {
@@ -9,7 +9,7 @@ export default function Phonetic(props) {
     return (
       <div className="Phonetic">
         <div className="audio">
-          <Audio audioUrl={audio} />
+          <AudioPlayer audioUrl={audio} />
         </div>
         <div className="text">{text}</div>
       </div>

@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Synonyms.css";
 
-export default function Synonyms(props) {
-  if (props.synonyms && props.synonyms.length > 0) {
-    const synonymsText = props.synonyms.join(", ");
+const Synonyms = ({ synonyms }) => {
+  if (synonyms && synonyms.length > 0) {
+    const synonymsText = synonyms.join(", ");
     return (
       <div>
         <span>Synonyms:</span> {synonymsText}
@@ -12,4 +12,6 @@ export default function Synonyms(props) {
   } else {
     return null;
   }
-}
+};
+
+export default Synonyms;

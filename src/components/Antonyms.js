@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Antonyms.css";
 
-export default function Antonyms(props) {
-  if (props.antonyms && props.antonyms.length > 0) {
-    const antonymsText = props.antonyms.join(", ");
+const Antonyms = ({ antonyms }) => {
+  if (antonyms && antonyms.length > 0) {
+    const antonymsText = antonyms.join(", ");
     return (
       <div>
         <span>Antonyms:</span> {antonymsText}
@@ -12,4 +12,6 @@ export default function Antonyms(props) {
   } else {
     return null;
   }
-}
+};
+
+export default Antonyms;

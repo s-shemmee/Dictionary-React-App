@@ -3,12 +3,12 @@ import Meaning from "./Meaning";
 import Phonetic from "./Phonetic";
 import "../styles/Results.css";
 
-export default function Results(props) {
-  if (!props.results) {
+const Results = ({ results }) => {
+  if (!results) {
     return null;
   }
 
-  const { word, phonetics, meanings } = props.results;
+  const { word, phonetics, meanings } = results;
 
   return (
     <div className="Results">
@@ -27,4 +27,6 @@ export default function Results(props) {
       ))}
     </div>
   );
-}
+};
+
+export default Results;
