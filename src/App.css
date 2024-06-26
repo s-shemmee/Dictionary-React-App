@@ -8,28 +8,29 @@
 }
 
 .App h1 {
-  font-size: 75px;
+  font-size: 3rem;
   font-weight: 900;
   margin: 30px 0;
-  text-align: center;
   letter-spacing: 3px;
-  -webkit-text-stroke: 2px #dde9e2;
-  color: #2e8b57;
+  -webkit-text-stroke: 2px var(--background-color);
+  color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+  .App h1 {
+    font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App h1 {
+    font-size: 6rem;
+  }
 }
 
 .App footer {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 500;
   margin: 5px 0;
-  text-align: center;
-  color: #000;
-}
-
-.App a {
-  color: #2e8b57;
-  text-decoration: none;
-}
-
-.App a:hover {
-  color: #277047;
+  color: var(--text-color);
 }

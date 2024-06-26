@@ -6,11 +6,11 @@ button {
   background-color: transparent;
   margin: 0;
   border: none;
-  font-size: 25px;
-  color: #2e8b57;
+  font-size: 1.25rem;
+  color: var(--primary-color);
   transition: color 0.3s ease;
 }
 
 button:hover {
-  color: #277047;
+  color: var(--secondary-color);
 }

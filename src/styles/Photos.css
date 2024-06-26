@@ -1,7 +1,21 @@
+.Photos {
+  margin-top: 20px;
+}
+
 .Photos img {
   border-radius: 5px;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
 }
 
 .Photos img:hover {
   opacity: 0.7;
+}
+
+@media (min-width: 768px) {
+  .Photos .col-4 {
+    flex: 0 0 auto;
+    width: 33.333333%;
+  }
 }

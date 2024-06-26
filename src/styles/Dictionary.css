@@ -1,52 +1,83 @@
 .Dictionary section {
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
   margin-bottom: 25px;
-  padding: 50px;
-  border-radius: 20px;
-  outline: 2px solid #2e8b57;
-  outline-offset: -10px;
-  background-color: #dde9e2;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 15px;
+  outline: 2px solid var(--primary-color);
+  outline-offset: -5px;
+  background-color: var(--background-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .Dictionary section {
+    padding: 30px;
+    border-radius: 20px;
+  }
 }
 
 .Dictionary .search {
-  margin: auto;
-  width: 50%;
+  width: 100%;
   height: 40px;
-  border: 2px solid #2e8b57;
+  border: 2px solid var(--primary-color);
   border-radius: 20px;
   background-color: #fff;
-  padding-left: 10px;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.Dictionary .search:focus {
+  border-color: var(--secondary-color);
+  outline: none;
 }
 
 .Dictionary .search-button {
+  width: 100%;
   height: 40px;
-  font-size: 15px;
-  padding: 8px 20px;
-  margin-left: 8px;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-top: 10px;
   border-radius: 20px;
   border: none;
-  background-color: #2e8b57;
+  background-color: var(--primary-color);
   color: #fff;
-  text-decoration: none;
-  transition: all 150ms ease-in-out;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .Dictionary .search-button:hover {
-  background-color: #277047;
+  background-color: var(--secondary-color);
+}
+
+@media (min-width: 576px) {
+  .Dictionary .search-button {
+    width: auto;
+    margin-top: 0;
+    margin-left: 10px;
+  }
 }
 
 .Dictionary .subheading {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  text-transform: lowercase;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  color: var(--text-color);
 }
 
 .Dictionary .suggestions {
-  margin-top: 10px;
-  font-size: 12px;
+  margin-top: 15px;
+  font-size: 1rem;
   font-style: italic;
-  color: #000;
+  color: var(--text-color);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .Dictionary .suggestions {
+    text-align: left;
+  }
 }

@@ -1,6 +1,12 @@
 .Results h2 {
-  color: #277047;
-  font-size: 45px;
+  color: var(--primary-color);
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  .Results h2 {
+    font-size: 2.5rem;
+  }
 }
