@@ -19,7 +19,8 @@
 }
 
 .Dictionary .search {
-  width: 50%;
+  width: 100%;
+  max-width: 400px;
   height: 40px;
   border: 2px solid var(--primary-color);
   border-radius: 20px;
