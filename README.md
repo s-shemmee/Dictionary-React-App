@@ -1,7 +1,7 @@
-# React Dictionary App
+# Dictionary App
 The React Dictionary App is a web application developed using React.js. It allows users to search for word definitions, listen to word pronunciation, and explore examples, synonyms, antonyms, and images related to the searched word. The app provides a user-friendly interface to explore and enhance vocabulary.
 
-![Snapshot dictionary-react-app-kohl vercel app](https://github.com/s-shemmee/Dictionary-React-App/assets/56132945/1a51ea36-b4ad-4fe4-86d9-8fb6323db88b)
+![Snapshot_hemmee-dictionary-react](https://github.com/s-shemmee/Dictionary-React-App/assets/56132945/6e13bff1-f7ac-47f2-b505-0cd7e9d67cd2)
 
 # Features
 - Search for word definitions, pronunciation, examples, synonyms, antonyms, and images.
@@ -32,7 +32,7 @@ To use this app, you can follow these steps:
 To use the app, simply type a word in the search bar to retrieve its definitions, synonyms, antonyms, and example sentences.
 
 # Demo
-A live demo of the React Dictionary App is available at [LINK TO LIVE DEMO](https://dictionary-react-app-kohl.vercel.app).
+A live demo of the React Dictionary App is available at [LINK TO LIVE DEMO](https://shemmee-dictionary-react-app.vercel.app).
 
 # Credits
 - The dictionary app was created by [s-shemmee](https://github.com/s-shemmee) .
