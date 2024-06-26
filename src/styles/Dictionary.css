@@ -5,7 +5,7 @@
   padding: 20px;
   border-radius: 15px;
   outline: 2px solid var(--primary-color);
-  outline-offset: -5px;
+  outline-offset: -10px;
   background-color: var(--background-color);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;

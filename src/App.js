@@ -13,25 +13,29 @@ function App() {
           <Dictionary defaultKeyword="aesthetic" />
         </main>
         <footer className="mt-5 footer">
-          <p className="m-0 credit">
-            Coded by{" "}
-            <a
-              href="https://github.com/s-shemmee"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              s-shemmee
-            </a>
-            ,
-            <a
-              href="https://github.com/shemmee/Dictionary-React-App"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Open sourced on Github.
-            </a>{" "}
-            Hosted on Vercel
-          </p>
+          <div className="footer-content">
+            <p className="credit">
+              Coded by{" "}
+              <a
+                href="https://github.com/s-shemmee"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                s-shemmee
+              </a>
+              ,{" "}
+              <a
+                href="https://github.com/shemmee/Dictionary-React-App"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-link"
+              >
+                Open sourced on Github
+              </a>
+              . Hosted on Vercel
+            </p>
+          </div>
         </footer>
       </div>
     </div>
@@ -39,3 +43,4 @@ function App() {
 }
 
 export default App;
+
