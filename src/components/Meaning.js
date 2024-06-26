@@ -20,7 +20,7 @@ const Meaning = ({ meanings }) => {
               </div>
               {example && (
                 <div className="example">
-                  <em>{example}</em>
+                  <span>E.g.</span> <em>{example}</em>
                 </div>
               )}
               {synonyms && (

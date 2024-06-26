@@ -63,13 +63,14 @@ const Dictionary = ({ defaultKeyword }) => {
           <input
             className="search"
             type="search"
+            name="keyword"
             onChange={handleKeywordChange}
             placeholder={defaultKeyword}
           />
           <input type="submit" value="Search" className="search-button" />
         </form>
         <div className="suggestions">
-          Suggested concepts: biodiversity, quantum mechanics, sustainability...
+          Suggested concepts: cat, tree, code, sun...
         </div>
       </section>
       {results && <Results results={results} />}
