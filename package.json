@@ -5,7 +5,7 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "axios": "^1.6.0",
+    "axios": "^1.7.4",
     "dotenv": "^16.0.3",
     "nth-check": "^2.1.1",
     "prop-types": "^15.8.1",
