@@ -399,15 +399,8 @@ const Dictionary = ({ defaultKeyword }) => {
       }
 
       try {
-        const pexelsApiKey = import.meta.env.VITE_PEXELS_KEY;
-        if (!pexelsApiKey) {
-          setPhotos(null);
-          return;
-        }
-
-        const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-        const photosResponse = await axios.get(pexelsApiUrl, {
-          headers: { Authorization: pexelsApiKey },
+        const photosResponse = await axios.get("/api/photos", {
+          params: { query: keyword.trim() },
         });
         setPhotos(photosResponse.data.photos);
       } catch (error) {
