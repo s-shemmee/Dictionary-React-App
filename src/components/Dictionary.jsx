@@ -399,7 +399,7 @@ const Dictionary = ({ defaultKeyword }) => {
       }
 
       try {
-        const pexelsApiKey = process.env.REACT_APP_PEXELS_API_KEY;
+        const pexelsApiKey = import.meta.env.VITE_PEXELS_KEY;
         if (!pexelsApiKey) {
           setPhotos(null);
           return;
