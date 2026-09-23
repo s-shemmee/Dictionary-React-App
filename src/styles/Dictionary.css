@@ -18,6 +18,13 @@
   }
 }
 
+.Dictionary form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
 .Dictionary .search {
   width: 100%;
   max-width: 400px;
@@ -26,36 +33,45 @@
   border-radius: 20px;
   background-color: #fff;
   padding: 0 15px;
-  margin-bottom: 15px;
   transition: border-color 0.3s ease;
 }
 
 .Dictionary .search:focus {
   border-color: var(--secondary-color);
-  outline: none;
+  outline: 3px solid rgba(39, 112, 71, 0.25);
+  outline-offset: 1px;
 }
 
 .Dictionary .search-button {
   height: 40px;
   font-size: 16px;
   padding: 10px 20px;
-  margin-top: 10px;
   border-radius: 20px;
   border: none;
   background-color: var(--primary-color);
   color: #fff;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, opacity 0.2s ease;
 }
 
-.Dictionary .search-button:hover {
+.Dictionary .search-button:hover:not(:disabled) {
   background-color: var(--secondary-color);
 }
 
+.Dictionary .search-button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
 @media (min-width: 576px) {
+  .Dictionary form {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
   .Dictionary .search-button {
     width: auto;
-    margin-top: 0;
     margin-left: 10px;
   }
 }
@@ -74,4 +90,30 @@
   font-style: italic;
   color: var(--text-color);
   text-align: center;
+}
+
+.Dictionary .status-message {
+  margin: 16px 0;
+  padding: 12px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.Dictionary .status-message--loading {
+  background: rgba(46, 139, 87, 0.12);
+  color: var(--secondary-color);
+  border: 1px solid rgba(46, 139, 87, 0.3);
+}
+
+.Dictionary .status-message--warning {
+  background: rgba(255, 179, 0, 0.12);
+  color: #7a4b00;
+  border: 1px solid rgba(255, 179, 0, 0.45);
+}
+
+.Dictionary .status-message--error {
+  background: rgba(183, 28, 28, 0.1);
+  color: #8d1f1f;
+  border: 1px solid rgba(183, 28, 28, 0.4);
 }
