@@ -399,15 +399,10 @@ const Dictionary = ({ defaultKeyword }) => {
       }
 
       try {
-        const pexelsApiKey = import.meta.env.VITE_PEXELS_KEY;
-        if (!pexelsApiKey) {
-          setPhotos(null);
-          return;
-        }
-
-        const pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
-        const photosResponse = await axios.get(pexelsApiUrl, {
-          headers: { Authorization: pexelsApiKey },
+        // Photos are fetched through a same-origin proxy so the Pexels API
+        // key stays server-side and is never inlined into the client bundle.
+        const photosResponse = await axios.get("/api/photos", {
+          params: { query: keyword, per_page: 9 },
         });
         setPhotos(photosResponse.data.photos);
       } catch (error) {
