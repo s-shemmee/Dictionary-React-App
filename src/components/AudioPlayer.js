@@ -3,8 +3,18 @@ import "../styles/Audio.css";
 
 export default function AudioPlayer(props) {
   function handleClick() {
-    const audioElement = new window.Audio(props.audioUrl);
-    audioElement.play();
+    if (props.audioUrl) {
+      const audioElement = new window.Audio(props.audioUrl);
+      audioElement.play();
+      return;
+    }
+
+    if (typeof window !== "undefined" && "speechSynthesis" in window) {
+      const utterance = new window.SpeechSynthesisUtterance(props.word || "");
+      utterance.lang = "en-US";
+      window.speechSynthesis.cancel();
+      window.speechSynthesis.speak(utterance);
+    }
   }
 
   return (
