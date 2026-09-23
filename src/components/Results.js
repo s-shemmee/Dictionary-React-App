@@ -16,7 +16,7 @@ const Results = ({ results }) => {
         <h2>{word}</h2>
         {phonetics.map((phonetic, index) => (
           <div key={index}>
-            <Phonetic phonetics={phonetic} />
+            <Phonetic phonetics={phonetic} word={word} />
           </div>
         ))}
       </section>

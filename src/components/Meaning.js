@@ -4,7 +4,7 @@ import "../styles/Meaning.css";
 import Antonyms from "./Antonyms";
 
 const Meaning = ({ meanings }) => {
-  const { partOfSpeech, definitions } = meanings;
+  const { partOfSpeech, definitions, synonyms, antonyms } = meanings;
 
   return (
     <div className="Meaning">
@@ -15,7 +15,7 @@ const Meaning = ({ meanings }) => {
           ({ definition, example, synonyms, antonyms }, index) => (
             <div key={index}>
               <div className="definition">
-                <span>Def: </span>
+                <span>Definition: </span>
                 {definition}
               </div>
               {example && (
@@ -35,6 +35,16 @@ const Meaning = ({ meanings }) => {
               )}
             </div>
           ),
+        )}
+        {synonyms && synonyms.length > 0 && (
+          <div className="synonyms meaning-level">
+            <Synonyms synonyms={synonyms} />
+          </div>
+        )}
+        {antonyms && antonyms.length > 0 && (
+          <div className="antonyms meaning-level">
+            <Antonyms antonyms={antonyms} />
+          </div>
         )}
       </section>
     </div>
